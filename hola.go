@@ -12,5 +12,5 @@ func main() {
 
 func respond(request r.RequestInfo, response *r.ResponseInfo) {
 	response.SetHTML()
-	response.Body = "Hola Mundo "
+	response.Body = "Hola Mundo  "
 }
