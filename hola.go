@@ -5,12 +5,8 @@ import (
 )
 
 func main() {
-	r.ROUTEID = "GET/_/hola/mundo"
-	r.RESPOND = respond
-	r.Run()
-}
-
-func respond(request r.RequestInfo, response *r.ResponseInfo) {
-	response.SetHTML()
-	response.Body = "Hola Mundo"
+	r.Run(func(req r.RequestInfo, res *r.ResponseInfo) {
+		res.SetHTML()
+		res.Body = "Hola Mundo"
+	})
 }

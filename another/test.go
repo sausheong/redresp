@@ -5,12 +5,10 @@ import (
 )
 
 func main() {
-	r.ROUTEID = "GET/_/hello/world"
-	r.RESPOND = respond
-	r.Run()
+	r.Run(respond)
 }
 
 func respond(request r.RequestInfo, response *r.ResponseInfo) {
 	response.SetHTML()
-	response.Body = "Hello World  "
+	response.Body = "Another Test "
 }
