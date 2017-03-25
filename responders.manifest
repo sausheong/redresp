@@ -10,9 +10,7 @@
 	{
 		"language": "ruby",
 		"responders": [ 
-			{"id": "GET/_/hola/mundo", "path": "hola.go"},
-			{"id": "GET/_/hello/world", "path": "hello.go"},
-			{"id": "GET/_/hello/test", "path": "another/test.go"} 
+			{"id": "GET/_/ruby/test", "path": "test.rb"}
 		]
 	}	
 ]
